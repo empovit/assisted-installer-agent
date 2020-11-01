@@ -11,12 +11,11 @@ services:
       - /run/systemd/journal/socket:/run/systemd/journal/socket
       - /dev/log:/dev/log
     privileged: true
-    networks:
-      agent_network:
+    network_mode: host
     environment:
       - PULL_SECRET_TOKEN=OpenShiftToken
       - WIREMOCK_PORT
-    command: ["/usr/bin/agent","--url","http://wiremock:${WIREMOCK_PORT}", "--cluster-id", "11111111-1111-1111-1111-111111111111", "--interval", "5"]
+    command: ["/usr/bin/agent","--url","http://127.0.0.1:${WIREMOCK_PORT}", "--cluster-id", "11111111-1111-1111-1111-111111111111", "--interval", "5"]
 
   dhcpd:
     image: networkboot/dhcpd
@@ -25,8 +24,7 @@ services:
       - net_raw
     volumes:
       - ${ROOT_DIR}/subsystem/data:/data
-    networks:
-      agent_network:
+    network_mode: host
     environment:
       - ROOT_DIR
     command: eth0
@@ -35,17 +33,9 @@ services:
     image: "rodolpheche/wiremock"
     ports:
       - "${WIREMOCK_PORT}:${WIREMOCK_PORT}"
-    networks:
-      agent_network:
+    network_mode: host
     environment: 
       - WIREMOCK_PORT
     volumes:
       - ./wiremock:/home/wiremock
     command: --port ${WIREMOCK_PORT}
-
-networks:
-  agent_network:
-    ipam:
-      driver: default
-      config:
-        - subnet: 172.100.0.0/16
