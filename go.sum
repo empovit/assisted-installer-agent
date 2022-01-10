@@ -1085,10 +1085,6 @@ github.com/openshift/api v0.0.0-20200901182017-7ac89ba6b971/go.mod h1:M3xexPhgM8
 github.com/openshift/api v0.0.0-20201019163320-c6a5ec25f267/go.mod h1:RDvBcRQMGLa3aNuDuejVBbTEQj/2i14NXdpOLqbNBvM=
 github.com/openshift/api v0.0.0-20210216211028-bb81baaf35cd/go.mod h1:aqU5Cq+kqKKPbDMqxo9FojgDeSpNJI7iuskjXjtojDg=
 github.com/openshift/api v3.9.1-0.20191111211345-a27ff30ebf09+incompatible/go.mod h1:dh9o4Fs58gpFXGSYfnVxGR9PnV53I8TW84pQaJDdGiY=
-github.com/openshift/assisted-service v1.0.10-0.20211121085606-2c0b10ee076f h1:gWVxdxUSWncYGwTOOBffebdwzOznVhPmPMbxtzOvk7I=
-github.com/openshift/assisted-service v1.0.10-0.20211121085606-2c0b10ee076f/go.mod h1:27Z02es7yJUu34pFYCUoxKDySD7/1D0WpuBBmzj4ORg=
-github.com/openshift/assisted-service v1.0.10-0.20211209144019-0e79e608f2b1 h1:Pvs+GVzBjm3KosxQzJ0vWW/JM8ZL4vzEJ/6xMSHy1JI=
-github.com/openshift/assisted-service v1.0.10-0.20211209144019-0e79e608f2b1/go.mod h1:27Z02es7yJUu34pFYCUoxKDySD7/1D0WpuBBmzj4ORg=
 github.com/openshift/assisted-service v1.0.10-0.20211220172429-aa87618bd812 h1:bQwBu5OV5BioSUAGRKD+XO5mwdtrAt6kwHR2DKkTQRo=
 github.com/openshift/assisted-service v1.0.10-0.20211220172429-aa87618bd812/go.mod h1:27Z02es7yJUu34pFYCUoxKDySD7/1D0WpuBBmzj4ORg=
 github.com/openshift/baremetal-operator v0.0.0-20200715132148-0f91f62a41fe/go.mod h1:DOgBIuBcXuTD8uub0jL7h6gBdIBt3CFrwz6K2FtfMBA=
@@ -1289,8 +1285,9 @@ github.com/sirupsen/logrus v1.4.1/go.mod h1:ni0Sbl8bgC9z8RoU9G6nDWqqs/fq4eDPysMB
 github.com/sirupsen/logrus v1.4.2/go.mod h1:tLMulIdttU9McNUspp0xgXVQah82FyeX6MwdIuYE2rE=
 github.com/sirupsen/logrus v1.5.0/go.mod h1:+F7Ogzej0PZc/94MaYx/nvG9jOFMD2osvC3s+Squfpo=
 github.com/sirupsen/logrus v1.6.0/go.mod h1:7uNnSEd1DgxDLC74fIahvMZmmYsHGZGEOFrfsX/uA88=
-github.com/sirupsen/logrus v1.7.0 h1:ShrD1U9pZB12TX0cVy0DtePoCH97K8EtX+mg7ZARUtM=
 github.com/sirupsen/logrus v1.7.0/go.mod h1:yWOB1SBYBC5VeMP7gHvWumXLIWorT60ONWic61uBYv0=
+github.com/sirupsen/logrus v1.8.1 h1:dJKuHgqk1NNQlqoA6BTlM1Wf9DOH3NBjQyu0h9+AZZE=
+github.com/sirupsen/logrus v1.8.1/go.mod h1:yWOB1SBYBC5VeMP7gHvWumXLIWorT60ONWic61uBYv0=
 github.com/slok/go-http-metrics v0.8.0 h1:rsIKW30MzLjbWRBkCQoe/Oxh/F283MKT6afdH3mXTaA=
 github.com/slok/go-http-metrics v0.8.0/go.mod h1:f22ekj0Ht4taz2clntVmLRSK4D+feX33zkdDW0Eytvk=
 github.com/smartystreets/assertions v0.0.0-20180927180507-b2de0cb4f26d/go.mod h1:OnSkiWE9lh6wB0YB77sQom3nweQdgAjqCqsofrRNTgc=
